@@ -99,28 +99,22 @@
 
 
     // Vendor carousel
-    $('.vendor-carousel').owlCarousel({
-        loop: true,
-        margin: 45,
-        dots: false,
-        loop: true,
-        autoplay: true,
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 2
-            },
-            576: {
-                items: 4
-            },
-            768: {
-                items: 6
-            },
-            992: {
-                items: 8
-            }
-        }
-    });
+   // ...existing code...
+// $(document).ready(function(){
+//     $('.vendor-carousel').owlCarousel({
+//         loop: true,
+//         margin: 30,
+//         autoplay: true,
+//         autoplayTimeout: 2000,
+//         smartSpeed: 1000,
+//         responsive: {
+//             0: { items: 2 },
+//             600: { items: 4 },
+//             1000: { items: 6 }
+//         }
+//     });
+// });
+// ...existing code...
 
 })(jQuery);
 
@@ -138,7 +132,8 @@ $('.vendor-carousel').owlCarousel({
     margin: 35,
     dots: true,
     autoplay: true,
-    smartSpeed: 1000,
+    autoplayTimeout: 1000,
+    smartSpeed: 500,
     responsive: {
         0: { items: 2 },
         576: { items: 4 },
